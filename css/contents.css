@@ -1,0 +1,38 @@
+
+.content {
+    width: auto;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.content-section {
+    width: 100%;
+}
+
+/* item */
+ul.text {
+    list-style: none;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#feature {
+    margin-top: 10px;
+    font-size: 10px;
+}
+ul.text .content-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+ul.text > li {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* mobile phones */
+    [class*="contents-"] {
+        width: auto;
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+  }

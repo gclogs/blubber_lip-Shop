@@ -1,5 +1,63 @@
-@import 
+/* google web font */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Staatliches', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
+
+/* hyperlink underline clear */
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+/* col-* align section */
+.col-1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* warp section */
+.title {
+    width: 100%;
+}
+
+.title-menu {
+    display: block;
+}
+
+.title-center {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 12px 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.table {
+    /* display: inline-block; */
+    margin-top: 8%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.table-list a {
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.table-list a:focus {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    /* mobile phones */
+    [class*="table"] {
+        margin-top: 5%;
+    }
+  }

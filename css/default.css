@@ -40,6 +40,11 @@ a, a:link, a:visited, a:focus, a:hover {
     display: inline-block;
 }
 
+#profile {
+    width: 70%;
+    vertical-align: -4px;
+}
+
 .title-center {
     /* color: #eeeeee; */
     display: inline-block;
@@ -62,7 +67,7 @@ a, a:link, a:visited, a:focus, a:hover {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.table-list a:focus {
+.table-list a:hover {
     font-weight: bold;
 }
 

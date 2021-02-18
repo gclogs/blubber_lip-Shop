@@ -21,11 +21,17 @@ ul.text {
     font-size: 8px;
 }
 ul.text .content-subtitle {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Gothic A1', sans-serif;
 }
 ul.text > li {
-    font-size: 12px;
+    font-size: 14px;
+}
+
+[class*="contents-"] {
+    width: auto;
+    padding: 0 30px;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 600px) {

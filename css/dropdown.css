@@ -1,0 +1,15 @@
+
+.dropdown-menu {
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .2s ease ;
+}
+
+.profile-warp {
+    position: relative;
+}
+
+.profile-warp ul li a {
+    display: block;
+}

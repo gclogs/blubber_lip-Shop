@@ -1,4 +1,5 @@
-# COPY - WORKSOUT
-> 모바일 디바이스 기반입니다.   
-##### 해당 프로젝트는 HTML/CSS/Javascript로만 이루어진 'WORKSOUT' 모작 페이지 입니다.    
-LINK: [WEB](https://gclogs.github.io/blubber_lip-Shop "블러버 립")
+# COPY (WORKSOUT)
+> 모바일 디바이스 기반입니다.   It is made based on mobile device, and    the service is only availiable in Korean.
+LINK: [GO TO WEB.](https://gclogs.github.io/blubber_lip-Shop "블러버 립")
+The project is a 'WORKSOUT' imitation page consisting of HTML/CSS/Javascript only.   It's a small project, and I'm clumsy, I hope you like it.
+##### tysm.

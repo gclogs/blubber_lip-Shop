@@ -1,6 +1,7 @@
 
-function showWarning() {
-    document.getElementById("profile").addEventListener("click", function() {
-        alert("아직 준비되지 않았습니다.");
-    })
-}
+let onDropdownMenu = document.querySelector(".dropdown-menu");
+let doChangeMenu = document.querySelector(".profile-warp");
+
+onDropdownMenu.addEventListener("click", function() {
+    doChangeMenu.classList.toggle("active");
+})

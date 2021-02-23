@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contents.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/account.css">
     <script src="https://kit.fontawesome.com/7ad1c966cb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,6 +31,19 @@
                                 <div class="profile-item">
                                     <span class="icon"></span>
                                     <span class="text">LOGIN</span>
+                                </div>
+                                <!-- login-form -->
+                                <div class="form-popup">
+                                    <form action="/action_page.php" class="form-container">
+                                        <label for="email"><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="email" required>
+                                        <br>
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter password" name="psw" required>
+                                        <br>
+                                        <button class="btn">Login</button>
+                                        <button class="btn cancel" onclick="closeForm()">Close</button>
+                                    </form>
                                 </div>
                             </a></li>
                             <li><a href="#" class="a_parent">
@@ -129,6 +143,8 @@
             </ul>
         </div>
     </div>
+    <script src="js/Browser.js"></script>
+    <script src="js/Login.js"></script>
     <script src="js/Profile.js"></script>
 </body>
 </html>

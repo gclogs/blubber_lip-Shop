@@ -1,0 +1,23 @@
+/* default setting */
+form > label {
+    font-size: 10px;
+}
+
+/* form-login */
+.form-popup {
+    display: none;
+}
+
+/* Add styles to the form-container */
+.form-container.active {
+    display: block;
+    padding: 15px 0;
+}
+
+/* Full-width input fields  */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 80%;
+    padding: 5px 0;
+    border: none;
+    background: #f1f1f1;
+}

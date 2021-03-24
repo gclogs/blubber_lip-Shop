@@ -31,6 +31,11 @@ a, a:link, a:visited, a:focus, a:hover {
     color: white;
 }
 
+#clock {
+    text-align: center;
+    font-size: 16px;
+}
+
 .title-center {
     /* color: #eeeeee; */
     display: inline-block;

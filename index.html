@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/account.css">
     <script src="https://kit.fontawesome.com/7ad1c966cb.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () {
+            var clock = document.getElementById('clock');
+
+            setInterval(function () {
+                clock.innerHTML = new Date().toString();
+            }, 1000);
+        };
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -28,22 +37,24 @@
                     <div class="profile-warp">
                         <ul>
                             <li><a href="#" class="a_parent">
-                                <div class="profile-item">
+                                <div class="profile-item" onclick="document.getElementById('id01').style.display = 'block'">
                                     <span class="icon"></span>
-                                    <span class="text">LOGIN</span>
-                                </div>
-                                <!-- login-form -->
-                                <div class="form-popup">
-                                    <form action="/action_page.php" class="form-container">
-                                        <label for="email"><b>Email</b></label>
-                                        <input type="text" placeholder="Enter Email" name="email" required>
-                                        <br>
-                                        <label for="psw"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter password" name="psw" required>
-                                        <br>
-                                        <button class="btn">Login</button>
-                                        <button class="btn cancel" onclick="closeForm()">Close</button>
+                                    <span class="text" >LOGIN</span>
+                                <!-- login-form popup -->
+                                <div id="id01" class="login">
+                                    <form name="login_form" class="login-content animate" method="POST">
+                                        <span>LOGIN</span>
+                                        <div class="input_data">
+                                            <input id="alert_email" type="text" placeholder="Enter Email" name="email" required>
+                                            <input id="alert_password" type="password" placeholder="Enter Password" name="psw" required>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="remember"> Remember me!
+                                        </div>
+                                        <button id="btn" type="submit" onclick="login()">Login</button>
+                                        <span>Create account</span>
                                     </form>
+                                </div>
                                 </div>
                             </a></li>
                             <li><a href="#" class="a_parent">
@@ -74,6 +85,7 @@
                     </div>
                 </div>
                 <div class="notice-tag">
+                    <h5 id="clock"></h5>
                     <span>남혁이와 함께 <strong>'무야호'</strong>를 외쳐 블러버립만의 혜택을 받으세요.</span>
                 </div>
                 <div class="table">
@@ -120,7 +132,7 @@
                                 <ul class="text">
                                     <li id="feature">EVENT -</li>
                                     <li class="content-subtitle">BLUBBER LIP'S SPECIAL GIFT</li>
-                                    <li>나은씨와 함께하는 블러버립 만의 2021년도 신축년 이벤트, 현질을 가장 알차게 한 분께 나은씨 싸인을 드립니다. <strong>꺄앆!!</strong></li>
+                                    <li>구남혁씨와 함께하는 블러버립 만의 2021년도 신축년 이벤트, 현질을 가장 알차게 한 분께 나은씨 싸인을 드립니다. <strong>꺄앆!!</strong></li>
                                 </ul>
                             </a>
                         </div>
@@ -135,7 +147,8 @@
                     <p>상호명:㈜ 블러버립 | 주소: 부끄뎡..</p>
                     <p>전자우편주소: 남경찬은 못생겼다</p>
                     <p>호스팅사업자: (주)구남혁</p>
-                    <p>대표: 구남혁</p>
+                    <p>대표: 구도윤</p>
+                    <p>부대표: 구남혁</p>
                     <p>따까리: 박수현</p>
                     <p>전화: 010-5125-4352</p>
                     <p>호스팅제공: <a href="https://github.com/gclogs" style="color: steelblue;">https://github.com/gclogs</a></p>
@@ -143,8 +156,9 @@
             </ul>
         </div>
     </div>
+    <!-- <script src="js/Profile.js"></script> -->
     <script src="js/Browser.js"></script>
+    <script src="js/Dropdown.js"></script>
     <script src="js/Login.js"></script>
-    <script src="js/Profile.js"></script>
 </body>
 </html>
